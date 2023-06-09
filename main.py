@@ -1,4 +1,4 @@
-# record of journeys
+# Flexipass History
 import datetime, os
 from flask import Flask, render_template, request, redirect, url_for
 

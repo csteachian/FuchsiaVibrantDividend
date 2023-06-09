@@ -1,0 +1,82 @@
+
+
+@media only screen and (max-width: 1080px) {
+  body {
+    background-color: lightblue;
+  text-align: center;
+  color: white;
+  font-family: "IBM Plex Sans";
+  font-size: 5vw;
+  }
+  
+  .header, .tickets, .footer {
+    height: 10vh;
+  }
+  
+  h1, h3 {
+    text-align: center;
+  }
+  
+  input[type=submit] {
+      width: 98vw;  height: 10vh; font-size: 10vw; align: center;
+  }
+  
+  img {
+    width: 204px;
+    height: 337px;
+  }
+  
+  ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    display: inline;
+    padding: 5px;
+  }
+  
+  .used {
+    display: inline;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: url(/static/trainchecked.png) no-repeat;
+    width: 20vw; /* Width of new image */
+  }
+  
+  .unused {
+    display: inline;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: url(/static/train.png) no-repeat;
+    width: 20vw; /* Width of new image */
+  }
+  
+  .visible {
+    display: block;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+  .toobig {
+    display: none;
+  }
+  .everything {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1081px) {
+ body {
+   font-size: 1px;
+ } 
+ .toobig {
+   display: block;
+ }
+ .everything {
+   display: none;
+ }
+}

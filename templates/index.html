@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href='/static/style.css' />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans">
+</head>
+<body>
+<div class="everything">
+<div class="header">
+  <h1>Flexipass History</h1>
+</div>
+{{history | safe}}
+<div class="tickets">
+  <h3>You have {{tickets_left}} tickets left.</h3>
+</div>
+<div class="footer">
+<div class="{{form_use}}">
+<form action="{{ url_for('handle_data') }}" method="post">
+  <input type="hidden" name="timestamp" value="{{utc_dt}}">
+<input type="submit" value="Use ticket">
+</form>
+</div>
+<div class="{{form_new}}">
+<form action="{{ url_for('new_flexipass') }}" method="post">
+  <input type="submit" value="New Flexipass">
+</form>
+</div>
+</div>
+</div>
+<div class="toobig">
+  <font size="48px">Sorry. I made this for my phone.</font>
+</div>
+</body>
+</html>
